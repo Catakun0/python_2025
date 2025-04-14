@@ -14,7 +14,7 @@ def caracteristiciile_actuale():
 while True:
     try:
         varsta = int(input("Introducetiva varsta: \n"))
-    except:
+    except ValueError:
         print("Introduceti va rog o cifra corespunzatoare")
         continue
 
@@ -26,7 +26,7 @@ while True:
 while True:
     try:
         inaltimea = int(input("Introducetiva inaltimea: \n"))
-    except:
+    except ValueError:
         print("Introduceti va rog o cifra corespunzatoare")
         continue
 
@@ -38,7 +38,7 @@ while True:
 while True:
     try:
         greutatea_actuala = int(input("Introducetiva greutatea: \n"))
-    except:
+    except ValueError:
         print("Introduceti va rog o cifra corespunzatoare")
         continue
 
@@ -56,7 +56,7 @@ while True:
                 break
             else:
                 print("Introduceti o optiune valida")
-    except:
+    except ValueError:
         print("Introduceti va rog o optiune corespunzatoare")
     if next1 == True:
         break

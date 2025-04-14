@@ -22,7 +22,7 @@ if mai_mica_de_un_an:
     while True:
         try:
             selector = int(input("Cate luni are pisoiul? \n 1 - 11 (luni) \n"))
-        except:
+        except ValueError:
             print("Introduceti va rog o cifra valida")
         if selector < 1 or selector > 11:
             print("Introduceti va rog o cifra intre 1 - 11!")
@@ -51,6 +51,6 @@ if mai_mica_de_un_an == False:
                 break
             else:
                 print("Introduceti un an valid intre 1 - 35")
-        except:
+        except ValueError:
             print("Introduceti va rog o cifra valida")
 
